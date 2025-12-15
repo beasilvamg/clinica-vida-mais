@@ -2,7 +2,7 @@
 
 Este projeto e contruido para gerenciar pacientes e consultas médicas de uma clínica de saúde que  sofre com a grande demanda de serviços médicos e procura por uma solução digital capaz de otimizar o atendimento e a experinecia dos pacientes.
 
-## Visão Geral do Projeto
+## 🏥 Visão Geral do Projeto
 
 A contrução do projeto esta sendo criada em duas partes:
 
@@ -23,8 +23,8 @@ Atualmente, o foco do projeto está na **organização e refatoração do backen
 
 ### ⏳ Próximas Tarefas de Refatoração
 
-* **Implementar o Serviço:** Isolar a lógica de cálculos e plotagem de relatórios de estatísticas no módulo `services/estatisticas.py`.
-* **Finalizar o Menu:** Ajustar o arquivo `app.py` para chamar o Controller e o Service, restaurando a funcionalidade completa do sistema.
+* **Implementar o Serviço:** Isolar a lógica de cálculos e plotagem de relatórios de estatísticas no módulo *services/estatisticas.py.*
+* **Finalizar o Menu:** Ajustar o arquivo *app.py* para chamar o Controller e o Service, restaurando a funcionalidade completa do sistema.
 
 ### ❌ Ainda não iniciado
 
