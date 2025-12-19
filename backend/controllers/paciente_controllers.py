@@ -7,13 +7,13 @@ from backend.utils.validacoes import validar_nome, validar_idade, validar_telefo
 
 class PacienteController:
     # Função para cadastrar paciente
-    def cadastrar_paciente(self, nome, idade_str, telefone):
+    def cadastrar_paciente(self, nome, idade, telefone):
         #Chamando as funções do módulo utils
         validar_nome(nome)
-        idade = validar_idade(idade_str)
+        idade_validada = validar_idade(idade)
         validar_telefone(telefone)
 
-        novo_paciente = Paciente(nome, idade, telefone)
+        novo_paciente = Paciente(nome, idade_validada, telefone)
         dados_pacientes.append(novo_paciente)
         return novo_paciente
 

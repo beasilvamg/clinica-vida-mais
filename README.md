@@ -2,7 +2,7 @@
 
 Este projeto e contruido para gerenciar pacientes e consultas médicas de uma clínica de saúde que  sofre com a grande demanda de serviços médicos e procura por uma solução digital capaz de otimizar o atendimento e a experinecia dos pacientes.
 
-## 🏥 Visão Geral do Projeto
+## 🏗️ Visão Geral do Projeto
 
 A contrução do projeto esta sendo criada em duas partes:
 
@@ -15,12 +15,12 @@ Atualmente, o foco do projeto está na **organização e refatoração do backen
 
 ### ✅ O que já foi feito
 
-* **Serviços (Lógica Matemática):** Criado o módulo *backend/services/estatisticas.py* para processamento de dados do dashboard.
-* **Testes Unitários:** Implementação de testes automatizados com *unittest* para validar a lógica de estatísticas.
+* **Arquitetura MVC:** Separação do código em arquivos distintos(Refatoração).
+* **Interface Visual:** Com a biblioteca Streamlit (Temporário)
 
-### ⏳ Próximas Tarefas de Refatoração
+### ⏳ Próximas Tarefas
 
-* **Finalizar o Menu:** Ajustar o arquivo *app.py* para chamar o Controller e o Service, restaurando a funcionalidade completa do sistema.
+* **Testes e Robustez nas Validações:** Aprimorar o backend
 * **Persistência:** Substituir a lista em memória por um banco de dados (SQLite).
 
 ### ❌ Ainda não iniciado

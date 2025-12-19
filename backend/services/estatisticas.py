@@ -16,6 +16,6 @@ def gerar_relatoio_estatistico(pacientes):
     return {
          "total_pacientes": total_pacientes,
          "media_idade": round(media_idade),
-         "mais_novo": mais_novo_idade,
-         "mais_velho": mais_velho_idade 
+         "mais_novo_idade": mais_novo_idade,
+         "mais_velho_idade": mais_velho_idade 
     }
