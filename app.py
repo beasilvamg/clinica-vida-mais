@@ -28,7 +28,7 @@ elif aba == "Cadastrar Paciente":
 
     with st.form("from_cadastro", clear_on_submit=True):
         nome = st.text_input("Nome")
-        idade = st.number_input("Idade", min_value=0, max_value=120, step=1)
+        idade = st.number_input("Idade", max_value=120, step=1)
         telefone = st.text_input("Telefone Ex: (99) 98765-4321")
         btn_enviar = st.form_submit_button("Salvar Cadastro")
         if btn_enviar:

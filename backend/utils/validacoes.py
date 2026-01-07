@@ -2,18 +2,22 @@
 import re
 
 def validar_nome(nome):
-    if not re.match(r"^[A-Za-zÀ-ÿ\s]+$", nome):
-        raise ValueError("O nome deve conter apenas letras e espaços.")
-    return True
+    nome = nome.strip().title()
+    if not re.fullmatch(r"^[A-Za-zÀ-ÿ\s]{3,}$", nome):
+        raise ValueError("Nome inválido: Digite apenas letras.")
+    return nome
 
 def validar_idade(idade):
-    if not isinstance(idade, int):
-        raise ValueError("A idade deve ser em números.")
-    if idade <= 0 or idade > 120:
-        raise ValueError("A idade deve estar entre 1 e 120.")
-    return int(idade)
+    try:
+        valor = int(idade)
+    except (ValueError, TypeError):
+        raise ValueError("A idade deve ser um número válido.")
+    if not 0 < valor <= 120:
+        raise ValueError("A idade deve estar entre 1 a 120.")
+    return valor
 
 def validar_telefone(telefone):
-    if not re.match(r"^\(\d{2}\)\s9\d{4}-\d{4}$", telefone):
-        raise ValueError("Telefone inválido! Use o formato (99) 98765-4321.")
-    return True
+    apenas_numeros = re.sub(r"\D", "", telefone)
+    if len(apenas_numeros) != 11:
+        raise ValueError("O telefone deve ter 11 dígitos.")
+    return f"({apenas_numeros[:2]}) {apenas_numeros[2:7]}-{apenas_numeros[7:]}"
