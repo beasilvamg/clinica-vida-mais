@@ -1,0 +1,9 @@
+#arquivos gerados automaticamente pelo python
+__pycache__/
+*.pyc
+venv/
+#senhas, api, conexão
+.env 
+.vscode/
+#sistemawin
+Thumbs.db
