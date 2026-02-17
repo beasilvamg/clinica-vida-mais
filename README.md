@@ -11,21 +11,33 @@ A contrução do projeto esta sendo criada em duas partes:
 
 ## 🚀 Status Atual do Projeto — Fase 1 (Backend)
 
-Atualmente, o foco do projeto está na **organização e refatoração do backend em Python**.
+O foco do projeto está na **implementação da persistência de dados** e **segurança da informação**.
 
 ### ✅ O que já foi feito
 
-* **Arquitetura MVC:** Separação do código em arquivos distintos(Refatoração).
-* **Interface Visual:** Com a biblioteca Streamlit (Temporário)
+* Arquitetura MVC: Separação do código em camadas (Models, Controllers, Database, Utils).
+
+* Persistência de Dados: Implementação de banco de dados real com SQLite, substituindo listas em memória.
+
+* Validações com Regex: Lógica rigorosa para garantir a integridade de nomes, idades e telefones.
+
+* Testes Unitários: Criação de scripts de teste para garantir que apenas dados válidos cheguem ao banco.
+
+* Interface Visual: Prototipagem rápida com a biblioteca Streamlit.
 
 ### ⏳ Próximas Tarefas
 
-* **Testes e Robustez nas Validações:** Aprimorar o backend
-* **Persistência:** Substituir a lista em memória por um banco de dados (SQLite).
+* Read: Exibir os pacientes cadastrados em uma tabela na interface.
+
+Update e Delete: Finalizar as operações básicas do banco de dados.
+
+Busca Avançada: Localizar pacientes por nome ou ID de forma otimizada.
 
 ### ❌ Ainda não iniciado
 
-* Integração com banco de dados (substituir a lista em memória).
-* Criação de novas funcionalidades (editar paciente, excluir paciente, criar consulta, etc.)
-* Desenvolvimento do frontend e a comunicação entre as camadas.
+* Desenvolvimento do frontend oficial em React.
+
+* Comunicação via API (Backend <-> Frontend).
+
+* Módulo de agendamento de consultas.
 
