@@ -1,17 +1,26 @@
 import sqlite3
 
-conexao = sqlite3.connect('backend/database/dadospacientes.db')
-cursor = conexao.cursor()
+db_conexao = 'backend/database/dadospacientes.db'
 
-creat_table = """
- CREATE TABLE IF NOT EXISTS Pacientes (
- id INTEGER PRIMARY KEY AUTOINCREMENT,
- nome TEXT NOT NULL,
- idade INTEGER NOT NULL,
- telefone TEXT NOT NULL UNIQUE
- ); 
- """
+def criar_tabela():
+    with sqlite3.connect(db_conexao) as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS Pacientes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nome TEXT NOT NULL,
+                idade INTEGER NOT NULL,
+                telefone TEXT NOT NULL UNIQUE
+            ); 
+        """)
+        conn.commit()
+criar_tabela()
 
-cursor.execute(creat_table)
-conexao.commit()
-conexao.close()
+
+def db_inserir(Paciente):
+    with sqlite3.connect(db_conexao) as conn:
+        cursor = conn.cursor() 
+        sql = """ INSERT INTO Pacientes (nome, idade, telefone) VALUES (?, ?, ?)"""
+        cursor.execute(sql, (Paciente.nome, Paciente.idade, Paciente.telefone))
+        conn.commit()
+    
