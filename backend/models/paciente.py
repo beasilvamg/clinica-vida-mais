@@ -1,6 +1,6 @@
 # Definindo classe pai
 class Paciente:
-    def __init__(self, id, nome, idade, telefone):
+    def __init__(self, nome, idade, telefone, id=None):
         self.id = id
         self.nome = nome
         self.idade = idade
