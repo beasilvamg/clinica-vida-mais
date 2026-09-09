@@ -1,19 +1,19 @@
-## 🏥 Clínica Vida+
+### Clínica Vida+
 
 Este projeto e contruido para gerenciar pacientes e consultas médicas de uma clínica de saúde que  sofre com a grande demanda de serviços médicos e procura por uma solução digital capaz de otimizar o atendimento e a experinecia dos pacientes.
 
-## 🏗️ Visão Geral do Projeto
+### Visão Geral do Projeto
 
 A contrução do projeto esta sendo criada em duas partes:
 
 1.  **Backend (Python):** Responsável pela lógica de negócio e persistência de dados.
-2.  **Frontend (React/JavaScript):** Interface de usuário (a ser iniciada).
+2.  **Frontend (HTML, CSS e JavaScript):** Interface de usuário (a ser iniciada).
 
-## 🚀 Status Atual do Projeto — Fase 1 (Backend)
+### Status Atual do Projeto — Fase 1 (Backend)
 
 O foco do projeto está na **implementação da persistência de dados** e **segurança da informação**.
 
-### ✅ O que já foi feito
+### O que já foi feito
 
 * Arquitetura MVC: Separação do código em camadas (Models, Controllers, Database, Utils).
 
@@ -29,13 +29,13 @@ O foco do projeto está na **implementação da persistência de dados** e **seg
 
 * Read: Exibir os pacientes cadastrados em uma tabela na interface.
 
-Update e Delete: Finalizar as operações básicas do banco de dados.
+* Update e Delete: Finalizar as operações básicas do banco de dados.
 
-Busca Avançada: Localizar pacientes por nome ou ID de forma otimizada.
+* Busca Avançada: Localizar pacientes por nome ou ID de forma otimizada.
 
 ### ❌ Ainda não iniciado
 
-* Desenvolvimento do frontend oficial em React.
+* Desenvolvimento do frontend oficial em HTML, CSS e JavaScript.
 
 * Comunicação via API (Backend <-> Frontend).
 
